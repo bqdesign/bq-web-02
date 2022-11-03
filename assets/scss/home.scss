@@ -1,0 +1,135 @@
+@import "./../../node_modules/bootstrap/scss/functions";
+@import "./../../node_modules/bootstrap/scss/variables";
+@import "./../../node_modules/bootstrap/scss/mixins";
+@import "./../../node_modules/bootstrap/scss/utilities";
+@import "./variables";
+
+.banner-right-img{
+    background-image: url('/assets/img/banner-right-img.webp') ;
+    background-repeat: no-repeat;
+    background-position: top right; 
+    height:550px;    
+}
+@media (max-width: 767px) {
+    .banner-right-img{
+        height:350px;
+        background-size: cover;
+    }
+}
+.banner-section {
+    color: $text-color;
+    
+    p {
+        font-size: 1.125rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+        font-family: $fontFamilyBlack;
+    }
+
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+.bg-wave{
+    background-image: url('/assets/img/bg-wave.webp');
+    height: 914px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            display: inline-block;
+
+            @media (min-width: 767px) {
+                img{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+.bg-app{
+    background-image: url('/assets/img/bg-app.webp');
+    height: 850px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.client-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    ul{
+        list-style: none;
+        margin: 0;
+
+        li{
+            display: inline-block;
+            margin: 5px;
+            border: 1px solid $gray-200;
+            img{
+                width: 308px;  
+            }                        
+        }
+        @media (max-width: 767px) {
+            li{
+                width:100%;
+                margin-right: 0;
+                margin-left: 0;
+                img{
+                    width: 100%;                      
+                } 
+            }
+            
+        }
+    }
+}
+
+.bg-tech{
+    background-image: url('/assets/img/bg-tech1.webp');
+    height: auto;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ul{
+        list-style: none;
+        margin: 0;
+
+        li{
+            display: inline-block;
+            margin: 20px 35px;
+
+            @media (min-width: 767px) {
+                img{
+                    width: 250px;
+                }
+            }
+        }
+    }
+    .tagline{
+        color: $primary;
+        text-transform: uppercase;
+        span{
+            color: $secondary;
+        }
+    }  
+}
+@media (min-width: 767px) {
+    .bg-tech{
+        height: 1000px;
+    }
+}

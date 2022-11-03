@@ -1,0 +1,292 @@
+@import "./../../node_modules/bootstrap/scss/functions";
+@import "./../../node_modules/bootstrap/scss/variables";
+@import "./../../node_modules/bootstrap/scss/mixins";
+@import "./../../node_modules/bootstrap/scss/utilities";
+
+// Layout & components
+@import "./../../assets/bootstrap/scss/root";
+@import "./../../assets/bootstrap/scss/reboot";
+@import "./../../assets/bootstrap/scss/type";
+@import "./../../assets/bootstrap/scss/images";
+@import "./../../assets/bootstrap/scss/containers";
+@import "./../../assets/bootstrap/scss/grid";
+@import "./../../assets/bootstrap/scss/tables";
+@import "./../../assets/bootstrap/scss/forms";
+@import "./../../assets/bootstrap/scss/buttons";
+@import "./../../assets/bootstrap/scss/transitions";
+@import "./../../assets/bootstrap/scss/dropdown";
+@import "./../../assets/bootstrap/scss/nav";
+@import "./../../assets/bootstrap/scss/navbar";
+@import "./../../assets/bootstrap/scss/accordion";
+@import "./../../assets/bootstrap/scss/breadcrumb";
+@import "./../../assets/bootstrap/scss/tooltip";
+@import "./../../assets/bootstrap/scss/carousel";
+
+// Helpers
+@import "./../../assets/bootstrap/scss/helpers";
+
+// Utilities
+@import "./../../assets/bootstrap/scss/utilities/api";
+
+@import "./variables";
+@import "./fonts";
+
+// override
+@import "./../../node_modules/bootstrap/scss/mixins";
+
+
+
+//page stretch added on 05/19/2022
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;    
+    background-color: $bg-skyblue;
+    font-size: 1.125rem;
+}
+p {
+    font-size: 1.125rem;
+    color:$text-color;
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: $fontFamilyBlack;
+    color:$text-color;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: $white  !important;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.navbar-brand {
+    margin-right: 6.5rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 2.5rem;
+    line-height: 4.818rem;
+
+    .nav-link {
+        border-bottom: 3px solid transparent;
+
+        &.show {
+            border-bottom-color: $primary;
+        }
+        &:hover{
+            border-bottom-color: $primary;
+        }
+    }
+}
+.btn-more{
+    background-image: url(/assets/img/btn-more.svg);
+    background-color: transparent;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    border: none;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;      
+    width:179px;
+    height:25px;
+
+    &.show-more:hover{
+        background-position: 0 -35px;
+    }
+
+}
+.nav-item .dropdown-menu {
+    line-height: 1.9;
+}
+
+.dropdown-menu[data-bs-popper] {
+    margin-top: 0;
+    border-radius: 0;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.btn {
+    font-weight: bold;
+    line-height: 2;
+    font-size: 1rem;
+    border-radius: .5rem !important;
+    text-transform: uppercase;
+
+    &.btn-outline-blue{
+        border: 1px solid $secondary;  
+        color: $secondary;
+        &:focus {
+            @include button-variant($secondary, $secondary, $gray-200); 
+            box-shadow: none;
+        }
+        &:hover{
+            @include button-variant($secondary, $secondary, $gray-200); 
+        }
+        &.active{
+            @include button-variant($secondary, $secondary, $gray-200);  
+            box-shadow: none;
+        }
+    }
+    &.btn-outline-pink{
+        border: 1px solid $primary;  
+        color: $primary;
+        &:focus {
+            @include button-variant($primary, $primary, $white); 
+            box-shadow: none;
+            border: 1px;
+        }
+        &:hover{
+            @include button-variant($primary, $primary, $white);
+        }
+        &.active{
+            @include button-variant($primary, $primary, $white); 
+            box-shadow: none;
+        }
+    }
+
+    &.btn-primary {
+        @include button-variant($primary, $primary, $white);
+    }
+    
+    &.btn-outline {
+        border: 1px solid $secondary;
+    }
+}
+
+.product-caption{
+    font-size: 1.5rem;
+    color:$cardTitleColor;
+    font-weight: 700;
+}
+.blockquote-footer{
+    font-size: 1.8rem;
+}
+
+// common
+.fw-500 {
+    font-family: $fontFamilyMedium;
+}
+
+.fw-600 {
+    font-family: $fontFamilyMedium;
+}
+
+.fw-black {
+    font-family: $fontFamilyBlack;
+}
+
+h5 {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 0.875rem;
+}
+
+.svg-icon-alignment {
+    margin-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.svg-filter-blue {
+    filter: invert(20%) sepia(13%) saturate(445%) hue-rotate(169deg) brightness(90%) contrast(86%);
+}
+
+.svg-filter-dark {
+    filter: invert(26%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(97%) contrast(95%);
+}
+
+.svg-filter-white {
+    filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(210deg) brightness(105%) contrast(100%);
+}
+.dropdown-menu.show {
+    animation-name: slidenavAnimation;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: slidenavAnimation;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: slidenavAnimation;
+    -moz-animation-duration: .5s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: forwards;
+}
+
+@keyframes slidenavAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slidenavAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+// footer styles
+.footer-links a {
+    color: $white;
+    text-decoration: none;
+    &:hover{
+        color: $primary;
+    }
+}
+
+.footer-logo-section {
+    margin-bottom: 2.5rem;
+}
+
+.footer-subheader {
+    color: $primary;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.social-icons-list {
+    margin-bottom: 1rem;
+
+    li.list-inline-item {
+        margin-right: 1.5rem;
+    }
+}
+
+.copyright-text {
+    font-size: 1rem;
+}
+
+///
+@import "./responsive"

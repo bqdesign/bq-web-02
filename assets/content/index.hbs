@@ -1,0 +1,308 @@
+ {{#> 
+layouts/main 
+title="binaryquest.com - Home"
+}}
+
+{{#*inline "head-block"}}
+<link rel="stylesheet" media="screen, print" href="assets/css/home.css">
+<!-- <link rel="stylesheet" media="screen, print" href="assets/vimeo/css/vi-lazyload.min.css"> -->
+{{/inline}}
+
+{{#*inline "content-block"}}
+
+
+<div class="page-wrapper flex-grow-1">
+	<!-- banner Start -->
+	<div class="container banner">
+		<div class="row">
+			<div class="col-lg-6 d-flex align-items-center justify-content-center mb-5">
+				<div class="col banner-section">
+					<h1>building value that you can trust</h1>
+					<p>We’r an internet solutions agency concentrated on customer focused cutting edge applications</p>
+					<div class="col">
+						<button type="button" class="btn btn-outline-pink active mx-2 px-5">Set a Meeting</button>
+						<button type="button" class="btn btn-outline-pink mx-2 px-5">GET IN TOUCH</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 banner-right-img"></div>
+			{{!-- for Mobile View --}}
+			<div class="col-lg-6 d-lg-none my-5">
+				<div class="col banner-section">
+					<h1>building value that you can trust</h1>
+					<p>We’r an internet solutions agency concentrated on customer focused cutting edge applications</p>
+					<div class="col">
+						<button type="button" class="btn btn-outline-pink active mx-2 px-lg-5">Set a Meeting</button>
+						<button type="button" class="btn btn-outline-pink mx-2 px-lg-5">GET IN TOUCH</button>
+					</div>
+				</div>
+			</div>
+			{{!-- for Mobile View End --}}
+		</div>
+	</div><!-- /.banner End -->
+	<!-- Products Start -->
+	<div class="container-fluid bg-wave pt-lg-5 mb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 px-lg-5">
+					<h1>our flagships...</h1>
+					<p>with cloud accounting software, your business is always your finger tips (literally)...</p>
+					<ul>
+						<li><img src="assets/img/btn-52.svg" class="img-fluid" alt=""></li>
+						<li><img src="assets/img/btn-53.svg" class="img-fluid" alt=""></li>
+						<li><img src="assets/img/btn-54.svg" class="img-fluid" alt=""></li>						
+					</ul>
+				</div>
+			</div>
+			<div class="row mt-lg-5">
+				<div class="col-lg-6">
+					<img src="assets/img/boat.svg" class="img-fluid" alt="">
+				</div>
+				<div class="col-lg-6 font-monospace">
+					<figure class="text-center mt-4">
+						<blockquote class="blockquote">
+							<p class="display-5">“Start first and increase your lead”</p>
+						</blockquote>
+						<figcaption class="blockquote-footer pt-4">
+							<cite title="Source Title">Buddy Melges</cite>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.Products End -->
+	<!-- Services Start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>what we can do for you...</h1>
+				<p>We provide solution for customer in web apps, desktop software and mobile app development areas. We also provide consultancy for companies with internal IT teams to collaborate and help produce the best project outcomes.</p>
+			</div>
+		</div>
+	</div>
+	<div class="w-100 d-flex align-items-end justify-content-end flex-column mb-5">
+		<div class="d-flex w-100 flex-column">
+			<div class="banner-tabs">
+				<!-- Tab btn Start -->
+				<div class="my-5 container">
+					<div class="row">
+						<div class="col-12">
+							<div class="d-md-none d-block">
+								<label>Select a Tab</label>
+								<select class="form-select text-uppercase" onchange="openTab(this)" id="sync2">
+									<option value="appdev">App Development</option>
+									<option value="cloud">Cloud Integration</option>
+									<option value="webapp">Webapp Development</option>
+								</select>
+							</div>
+							<ul class="nav nav-tabs justify-content-center d-md-flex d-none" id="servicesContent" role="tablist">
+								<li class="nav-item mx-2" role="presentation">
+									<button class="btn btn-outline-pink active px-lg-5" href="#" id="appdev-tab" data-bs-toggle="tab" data-bs-target="#appdev" type="button" role="tab" aria-controls="vehicletype" aria-selected="false" onclick="syncChange(this, 'sync2')">App Development</button>
+								</li>
+								<li class="nav-item mx-2" role="presentation">
+									<button class="btn btn-outline-pink px-lg-5" href="#" id="cloud-tab" data-bs-toggle="tab" data-bs-target="#cloud" type="button" role="tab" aria-controls="partnumber" aria-selected="false" onclick="syncChange(this, 'sync2')">Cloud Integration</button>
+								</li>
+								<li class="nav-item mx-2" role="presentation">
+									<button class="btn btn-outline-pink px-lg-5" href="#" id="webapp-tab" data-bs-toggle="tab" data-bs-target="#webapp" type="button" role="tab" aria-controls="cup" aria-selected="false" onclick="syncChange(this, 'sync2')">Webapp Development</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!-- Tab btn end -->
+				<!-- Tab App Start -->
+				<div class="tab-content" id="servicesContent">
+					<div class="tab-pane fade show active bg-app" id="appdev" role="tabpanel" aria-labelledby="appdev-tab">
+						<div class="product-catalog-section container">
+							<h2 class="text-center my-3"><span>Our motivation is driven by our passion for recent and future technologies and innovation</span></h2>
+							<div class="row">
+								<div class="col-sm-6 my-3">
+									<div class="product-catalog">
+										<div class="product-body">
+											<span class="product-caption">Strategy</span>
+											<div class="product-instructions">Defining the strategy for evolving your idea into a successful app</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 my-3">
+									<div class="product-catalog">
+										<div class="product-body">
+											<span class="product-caption">App Development</span>
+											<div class="product-instructions">Develop backend, API, and mobile app following agile development process.</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 my-3">
+									<div class="product-catalog">										
+										<div class="product-body">
+											<span class="product-caption">Deployment &amp; Support</span>
+											<div class="product-instructions">Identify requirments, define team structure, and prepare product roadmap.</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 my-3">
+									<div class="product-catalog">
+										<div class="product-body">
+											<span class="product-caption">Analysis &amp; Planning</span>
+											<div class="product-instructions">Identify requirments, define team structure, and prepare product roadmap.</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 my-3">
+									<div class="product-catalog">
+										<div class="product-body">
+											<span class="product-caption">Testing</span>
+											<div class="product-instructions">We deliver seamless and effortless user experiences with a polished look</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 my-3">
+									<div class="product-catalog">
+										<div class="product-body">
+											<span class="product-caption">UI &amp; UX Design</span>
+											<div class="product-instructions">We deliver seamless and effortless user experiences with a polished look</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- Tab App End -->
+					<!-- Tab Cloud Integration Start -->
+					<div class="tab-pane fade" id="cloud" role="tabpanel" aria-labelledby="cloud-tab">						
+						<div class="container">
+							<div class="product-catalog-section mb-3">
+								<h2 class="text-center my-3"><span>Specializing in Scalable, Custom Cloud Software Development</span></h4>
+								<p>Realizing the benefits of business agility, infrastructure flexibility, scalability, and cost efficiency, companies are moving their apps to Cloud. It also frees up the IT team and allows them to focus on their core tasks, in particular, product innovation.</p>
+								<div class="row">
+									<div class="col-sm-6 mb-3 mb-md-0">
+										<div class="product-catalog">
+											<div class="product-body my-3">
+												<span class="product-caption">Design &amp; Development</span>
+												<div class="product-instructions">Development solution on Microsoft Azure and Amazon AWS platform with our expert developers</div>
+											</div>
+											<div class="product-body my-3">
+												<span class="product-caption">Management &amp; Support</span>
+												<div class="product-instructions">Provides management and monitoring services to make sure deployed application runs smoothly.</div>
+											</div>
+											<div class="product-body my-3">
+												<span class="product-caption">Strategy</span>
+												<div class="product-instructions">Providing expert advice on Cloud apps strategy.</div>
+											</div>
+											<div class="product-body my-3">
+												<span class="product-caption">Transferring Existing App</span>
+												<div class="product-instructions">Transferring existing apps to the Cloud system</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 mb-3 mb-md-0">
+										<img src="assets/img/cloud-img.svg" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- Tab Cloud Integration End -->
+					<!-- Tab Webapp Start -->
+					<div class="tab-pane fade" id="webapp" role="tabpanel" aria-labelledby="webapp-tab">
+						<div class="container">
+							<div class="product-catalog-section mb-3">
+								<h4 class="text-center my-3"><span>Management &amp; Support</span></h4>
+								<p>Help migrate legacy application from on premise to cloud and provide support to monitor cloud applications. Priority is to provide full visibility of the application. Free up expensive IT resources. Deploy automated monitoring tools.</p>
+								<div class="row">
+									<div class="col-sm-6 mb-3 mb-md-0">
+										<div class="product-catalog">
+											<div class="product-body my-3">
+												<span class="product-caption">Design, Development &amp; Testing</span>
+												<div class="product-instructions">Following Agile methodology design and develop the application with suitable cutting technology. Validate quality with a series of testing criteria.</div>
+											</div>
+											<div class="product-body my-3">
+												<span class="product-caption">Domain &amp; Hosting Support</span>
+												<div class="product-instructions">Provides management and monitoring services to make sure deployed application runs smoothly.</div>
+											</div>
+											<div class="product-body my-3">
+												<span class="product-caption">Technologies</span>
+												<div class="product-instructions">Help develop application that is cloud first and keeping up eith latest trends and requirements.</div>
+											</div>
+											<div class="product-body my-3">
+												<span class="product-caption">Strategy</span>
+												<div class="product-instructions">Defining the strategy for evolving your idea into a successful web app.</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 mb-3 mb-md-0">
+										<img src="assets/img/webapp-img.svg" class="img-fluid" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- Tab Webapp End -->
+				</div>
+			</div>
+		</div>
+	</div><!-- /.Services End -->
+	<!-- Our Client Start -->
+	<div class="container client-section mb-5">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>these amazing folks we worked with...</h1>
+				<p>had the opportunity to work with and form partnerships with many strong and strategist businesses.</p>
+			</div>
+			<ul>
+				<li><img src="assets/img/logo-1.svg" class="img-fluid" alt=""></li>
+				<li><img src="assets/img/logo-2.svg" class="img-fluid" alt=""></li>
+				<li><img src="assets/img/logo-3.svg" class="img-fluid" alt=""></li>
+				<li><img src="assets/img/logo-4.svg" class="img-fluid" alt=""></li>
+				<li><img src="assets/img/logo-5.svg" class="img-fluid" alt=""></li>
+				<li><img src="assets/img/logo-6.svg" class="img-fluid" alt=""></li>
+				<li><img src="assets/img/logo-7.svg" class="img-fluid" alt=""></li>
+				<li><img src="assets/img/logo-8.svg" class="img-fluid" alt=""></li>
+			</ul>
+			<div class="d-flex justify-content-end mt-3">
+				<button class="btn-more show-more"></button>
+			</div>			
+		</div>
+	</div><!-- /Our Client End -->
+	<!-- Technologies Start -->
+	<div class="container-fluid bg-tech mb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>tools &amp; technologies at your disposal...</h1>
+					<p>We worked tirelessly amid the pandemic to keep ourselves up to date with all current techonologies and trends</p>
+				</div>
+				<ul>
+					<li><img src="assets/img/tech-logo-62.svg" class="img-fluid" alt=""></li>
+					<li><img src="assets/img/tech-logo-63.svg" class="img-fluid" alt=""></li>
+					<li><img src="assets/img/tech-logo-64.svg" class="img-fluid" alt=""></li>
+					<li><img src="assets/img/tech-logo-65.svg" class="img-fluid" alt=""></li>
+					<li><img src="assets/img/tech-logo-66.svg" class="img-fluid" alt=""></li>
+					<li><img src="assets/img/tech-logo-67.svg" class="img-fluid" alt=""></li>
+					<li><img src="assets/img/tech-logo-68.svg" class="img-fluid" alt=""></li>
+					<li><img src="assets/img/tech-logo-69.svg" class="img-fluid" alt=""></li>					
+					<li><img src="assets/img/tech-logo-70.svg" class="img-fluid" alt=""></li>
+					<li><img src="assets/img/tech-logo-71.svg" class="img-fluid" alt=""></li>
+					<li><img src="assets/img/tech-logo-72.svg" class="img-fluid" alt=""></li>
+					<li><img src="assets/img/tech-logo-73.svg" class="img-fluid" alt=""></li>
+				</ul>
+				<div class="d-flex mt-3">
+					<p>**tap on the logos to learn more about them</p>
+				</div>			
+			</div>
+			<div class="col-lg-12 d-flex justify-content-center my-5">
+				<h1 class="tagline">
+					lead <span>your</span> next right decision
+				</h1>				
+			</div>			
+			<div class="col-lg-12 d-flex justify-content-center my-5">
+				<button type="button" class="btn btn-outline-pink px-lg-5">Set a Meeting</button>
+			</div>
+		</div>
+	</div><!-- /Technologies End -->
+</div>
+
+
+{{/inline}}
+
+{{#*inline "scripts-block"}}
+<!-- <script src="assets/vimeo/js/vi-lazyload.min.js"></script> -->
+{{/inline}}
+
+{{/layouts/main}}

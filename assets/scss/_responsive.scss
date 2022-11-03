@@ -1,0 +1,149 @@
+@media (max-width: 1399px) {
+    .navbar-nav .nav-item {
+        line-height: 4rem;
+    }
+}
+@media (max-width: 991px) {
+    .banner {        
+        .d-flex{
+            display: none !important;
+        }
+    }
+    .navbar-nav .nav-item {
+        line-height: 4rem;
+        margin-right: 2rem;
+    }
+    .bg-app{
+        background-size: 100% !important;
+        height:980px !important;
+    }
+    .bg-tech{
+        background-size: 100% !important;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-brand {
+        margin-right: 2.5rem;
+        img {
+            max-width: 200px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    
+    .dropdown-menu {
+        border: 0; 
+    }
+    .contact-message {
+        height: auto;
+    }
+    .pt-5{
+        padding-top: 2rem !important;
+    }
+    .card-title {
+        font-size: 2rem;
+    }
+    .card-body {
+        padding: 1rem;
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+    .help-section-row h3 {
+        font-size: 2rem;
+    }
+    .help-section-row .btn {
+        min-width: 8rem;
+    }
+    .form-control, .form-select {
+        min-width: 180px;
+    }
+    .search-form {
+        .btn {
+            min-width: 150px;
+        }
+    }
+    .navbar-brand {
+        margin: 0;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+        img {
+            max-width: 110px;
+        }
+    }
+    .navbar-brand {
+        margin-left: 1rem;
+    }
+    .navbar-toggler {
+        margin-right: 1rem;
+    }
+    .navbar-collapse {
+        background: $white;
+        padding: 1rem;
+    }
+    .navbar-nav .nav-item {
+        line-height: 3rem;
+        margin-right: 0;
+        .nav-link {
+            color: $secondary !important;
+            border-bottom-width: 2px;
+            border-bottom-color: $smNavItemBorder;
+        }
+        &:last-child .nav-link {
+            border-bottom-color: transparent;
+        }        
+    }
+
+    .custom-tabs {
+        .nav-link {
+            font-size: .8rem;
+            padding-left: .4rem;
+            padding-right: .4rem;
+        }
+    }
+    .hot-post {
+        .hot-post-right {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    .footer-short-nav .list-inline-item {
+        margin-left: 0;
+    }
+
+    .footer-bottom-line {
+        padding: 0 0 1rem;
+    }
+    .footer-logo-section {
+        img {
+            max-width: 180px;
+        }
+    }
+    .footer-links {
+        > li {
+            font-size: 0.85rem;
+            min-width: 44%;
+            display: inline-flex;
+            > a {
+                text-decoration: underline;
+            }
+        }
+    }
+    .footer-short-nav {
+        font-size: 0.85rem;
+    }
+
+    .help-section-row {
+        h3 {
+            font-size: 1.25rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 479px) { 
+    .form-control, .form-select {
+        min-width: 140px;
+    }
+}

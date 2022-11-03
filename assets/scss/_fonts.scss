@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: "Eurostile";
+    src: url("../fonts/Eurostile-BolObl.eot");
+    src: url("../fonts/Eurostile-BolObl.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-BolObl.woff2") format("woff2"), url("../fonts/Eurostile-BolObl.woff") format("woff"), url("../fonts/Eurostile-BolObl.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Eurostile";
+    src: url("../fonts/Eurostile-Bol.eot");
+    src: url("../fonts/Eurostile-Bol.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-Bol.woff2") format("woff2"), url("../fonts/Eurostile-Bol.woff") format("woff"), url("../fonts/Eurostile-Bol.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "EurostileBla";
+    src: url("../fonts/Eurostile-Bla.eot");
+    src: url("../fonts/Eurostile-Bla.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-Bla.woff2") format("woff2"), url("../fonts/Eurostile-Bla.woff") format("woff"), url("../fonts/Eurostile-Bla.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "EurostileBla";
+    src: url("../fonts/Eurostile-BlaIta.eot");
+    src: url("../fonts/Eurostile-BlaIta.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-BlaIta.woff2") format("woff2"), url("../fonts/Eurostile-BlaIta.woff") format("woff"), url("../fonts/Eurostile-BlaIta.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "EurostileHea";
+    src: url("../fonts/Eurostile-HeaIta.eot");
+    src: url("../fonts/Eurostile-HeaIta.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-HeaIta.woff2") format("woff2"), url("../fonts/Eurostile-HeaIta.woff") format("woff"), url("../fonts/Eurostile-HeaIta.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "EurostileHea";
+    src: url("../fonts/Eurostile-Hea.eot");
+    src: url("../fonts/Eurostile-Hea.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-Hea.woff2") format("woff2"), url("../fonts/Eurostile-Hea.woff") format("woff"), url("../fonts/Eurostile-Hea.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "EurostileMed";
+    src: url("../fonts/Eurostile-MedIta.eot");
+    src: url("../fonts/Eurostile-MedIta.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-MedIta.woff2") format("woff2"), url("../fonts/Eurostile-MedIta.woff") format("woff"), url("../fonts/Eurostile-MedIta.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Eurostile";
+    src: url("../fonts/Eurostile-RegObl.eot");
+    src: url("../fonts/Eurostile-RegObl.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-RegObl.woff2") format("woff2"), url("../fonts/Eurostile-RegObl.woff") format("woff"), url("../fonts/Eurostile-RegObl.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "EurostileMed";
+    src: url("../fonts/Eurostile-Med.eot");
+    src: url("../fonts/Eurostile-Med.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-Med.woff2") format("woff2"), url("../fonts/Eurostile-Med.woff") format("woff"), url("../fonts/Eurostile-Med.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Eurostile";
+    src: url("../fonts/Eurostile-Reg.eot");
+    src: url("../fonts/Eurostile-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/Eurostile-Reg.woff2") format("woff2"), url("../fonts/Eurostile-Reg.woff") format("woff"), url("../fonts/Eurostile-Reg.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'flexslider-icon';
+    src: url('../fonts/flexslider-icon.eot');
+    src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: "Eurostile", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .flex-direction-nav a:before {
+    font-size: 30px;
+  }

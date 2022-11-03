@@ -1,0 +1,50 @@
+name: NodeJS with Gulp
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_HOOK }}
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+
+    - name: Build
+      run: |
+        npm install
+        gulp
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        local-dir: dist/
+        server: ftp.demo1.binaryquest.com
+        username: ryco@demo1.binaryquest.com
+        password: ${{ secrets.FTP_PASSWORD }}
+        
+        
+    - name: Deploy notification
+      if: always()
+      uses: adamkdean/simple-slack-notify@master
+      with:
+        channel: '#build_notifications'
+        status: ${{ job.status }}
+        success_text: '${env.GITHUB_REPOSITORY} Deployment (#${env.GITHUB_RUN_NUMBER}) completed successfully'
+        failure_text: '${env.GITHUB_REPOSITORY} Deployment (#${env.GITHUB_RUN_NUMBER}) failed'
+        cancelled_text: '${env.GITHUB_REPOSITORY} Deployment (#${env.GITHUB_RUN_NUMBER}) was cancelled'
+        fields: |
+           [{ "title": "Site", "value": "demo1.binaryquest.com"},
+           { "title": "Project", "value": "${env.GITHUB_REPOSITORY}"},
+           { "title": "Action URL", "value": "${env.GITHUB_SERVER_URL}/${env.GITHUB_REPOSITORY}/actions/runs/${env.GITHUB_RUN_ID}"}]
