@@ -8,12 +8,12 @@
     background-image: url('/assets/img/banner-right-img.webp') ;
     background-repeat: no-repeat;
     background-position: top right; 
+    background-size: contain;
     height:550px;    
 }
 @media (max-width: 767px) {
     .banner-right-img{
-        height:350px;
-        background-size: cover;
+        height:370px;
     }
 }
 .banner-section {
@@ -39,11 +39,15 @@
 }
 .bg-wave{
     background-image: url('/assets/img/bg-wave.webp');
-    height: 914px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    @media (min-width: 1601px) { 
+        height: 850px;
+        &.mb-5 {
+            margin-bottom: 0 !important;
+        }
+    }
     ul{
         list-style: none;
         margin: 0;
@@ -66,7 +70,7 @@
     height: 850px;
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .client-section{
@@ -83,7 +87,12 @@
             border: 1px solid $gray-200;
             img{
                 width: 308px;  
-            }                        
+            }
+            @media (max-width: 1399px) { 
+                img{
+                    width: 260px;  
+                }
+            }                       
         }
         @media (max-width: 767px) {
             li{
@@ -93,8 +102,7 @@
                 img{
                     width: 100%;                      
                 } 
-            }
-            
+            }            
         }
     }
 }
@@ -104,7 +112,7 @@
     height: auto;
     background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     ul{
         list-style: none;
         margin: 0;
@@ -113,9 +121,13 @@
             display: inline-block;
             margin: 20px 35px;
 
-            @media (min-width: 767px) {
+            img{
+                width: 250px;  
+            }
+
+            @media (min-width: 767px) and (max-width: 1399px) { 
                 img{
-                    width: 250px;
+                    width: 205px;  
                 }
             }
         }
